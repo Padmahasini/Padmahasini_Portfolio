@@ -1,0 +1,514 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Padmahasini Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("v5Mi6JzBncFF6Ae_w");
+        })();
+    </script>
+</head>
+
+<body>
+    <!-- <section id="welcome" onclick="portfolio();" style="display: block;">
+        <p style="text-align: left;">
+            Hey there! <br>
+            Click here to see my profile!
+        </p>
+    </section> -->
+    <header class="w3-bar w3-card w3-theme">
+        <button class="w3-bar-item w3-button w3-xxxlarge w3-hover-theme" onclick="openSidebar()" style="width: 10%;background-color: aqua; position: sticky;
+        position: -webkit-sticky;
+        top: 0;">&#9776;</button>
+    </header>
+    <header id="header">
+
+        <div class="d-flex flex-column">
+            <span onclick="closeSidebar()" class="w3-button w3-display-topright w3-large" style="color:white;background-color: red;text-align: center;font-size: large;">X</span>
+            <div class="profile">
+
+                <img src="images/photo.jpg" alt="photo" class="img-fluid rounded-circle">
+                <h1 class="text-light"><a href="index.html" id="pname">Padmahasini</a></h1>
+                <div class="social-links mt-3 text-center">
+                    <a href="https://www.linkedin.com/in/padmahasini-al-319b4115a/" class="bi bi-linkedin"
+                        target="_blank"></a>
+
+                    <a href="https://www.facebook.com/al.padmahasini" class="bi bi-facebook" target="_blank"></a>
+
+                    <a href="https://www.instagram.com/alpadmahasini/" class="bi bi-instagram" target="_blank"></a>
+
+                    <button style="border: none;background-color: skyblue;" onclick="overallblock(envelope);"><a
+                            href="#envelope" class="bi bi-envelope" ></a></button>
+
+                </div>
+            </div>
+        </div>
+        <!-- Navigation Menu -->
+        <nav class="nav-menu">
+            <ul>
+                <li class="active"><a href="index.html"><i class="bi bi-house-door-fill"></i><span>Home</span></a></li>
+                <li><a href="#profile"><i class="bi bi-person-circle" style="color: white;"></i><span>Profile</span></a>
+                </li>
+                <li><a href="#skills"><i class="bi bi-book" style="color: white;"></i><span>Skills</span></a></li>
+                <li><a href="#exp"><i class="bi bi-patch-check-fill"
+                            style="color: white;"></i><span>Experience</span></a></li>
+                <li><a href="#resp"><i class="bi bi-book-fill"
+                            style="color: white;"></i><span>Responsibilities</span></a></li>
+
+            </ul>
+        </nav>
+        <!-- <button type="button" class="mobile-nav-toggle d-xl-none"><i class="bi bi-toggles2"></i></button> -->
+    </header>
+    <section id="photosec" class="d-flex flex-column"
+        style="background-color: hotpink;width: 100%;margin-left: 0%;justify-content: right;align-items: flex-end;">
+        <div class="namefp" data-aos="fade-in"
+            style="font-size: 24px;padding-bottom: 100px;display: inline-block;margin: 10%;">
+            <b style="font-size: 48px;width: 30%;">Passionate & Highly motivated </b> <br><br>
+            <p class="dev">MEAN Developer</p><br>
+            <p class="dev">Front End Developer</p><br>
+            <p class="dev">Website Developer</p>
+        </div>
+    </section>
+    <!-- Section  -->
+    <section id="profile" class="profile" style="background-color: khaki;margin-top: 0%;">
+        <hr style="color:white;">
+        <div class="sect-head">
+            <!-- Start about me -->
+            <h1>
+                <center>About Me</center>
+            </h1>
+            <!-- <div class="about-me" style="margin-left: 10%;width:80%;font-size: 18px;">
+            Highly motivated Full stack <b>MERN Developer</b> who has pursued Geoinformatics Engineering in Anna
+            University from Chennai, TamilNadu, India.
+            Passionate enough to change the world into a better place
+        </div> -->
+
+            <div class="timeline">
+                <ul>
+                    <li>
+                        <span>1998</span>
+                        <div class="content">
+                            <p>Born in Chennai, TamilNadu, India</p>
+                        </div>
+                    </li>
+                    <li>
+                        <span>2013</span>
+                        <div class="content">
+                            <p>Completed SSLC with 96% from AV Meiyappan Higher Secondary School in Chennai</p>
+                        </div>
+                    </li>
+                    <li>
+                        <span>2015</span>
+                        <div class="content">
+                            <p>Completed HSC with 95% from AV Meiyappan Higher Secondary School in Chennai</p>
+                        </div>
+                    </li>
+                    <li>
+                        <span>2019</span>
+                        <div class="content">
+                            <p>Pursued Bachelor's degree in Geoinformatics from College of Engineering Guindy,Anna
+                                University,Chennai with 91%</p>
+                        </div>
+                    </li>
+                    <li>
+                        <span>2022</span>
+                        <div class="content">
+                            <p>Worked as Junior Developer in Hexamap Solutions Private Limited (from 2019 to 2022)</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        </div>
+    </section>
+    <section id="skills" name="skills">
+        <h1>
+            <center>Skills</center>
+        </h1>
+        <div>
+
+            <h3 style="margin: 2%;">
+                <center>Softwares Known</center>
+            </h3>
+            <table style="min-height: 30%;width: 80%;margin: 5%;margin-top: 1%;">
+                <tr>
+                    <td>QGIS & ARCGIS</td>
+                    <td style="width: 60%;">
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" aria-label="HTMl" aria-valuenow="90"
+                                aria-valuemin="0" aria-valuemax="100" style="width: 80%;">80%</div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>AUTOCAD & REVIT</td>
+                    <td>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" aria-label="HTMl" aria-valuenow="90"
+                                aria-valuemin="0" aria-valuemax="100" style="width: 90%;">90%</div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>SMALLWORLD</td>
+                    <td>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" aria-label="HTMl" aria-valuenow="90"
+                                aria-valuemin="0" aria-valuemax="100" style="width: 85%;">85%</div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>MYSQL</td>
+                    <td>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" aria-label="HTMl" aria-valuenow="90"
+                                aria-valuemin="0" aria-valuemax="100" style="width: 70%;">70%</div>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <!-- </div> -->
+
+        <h3 style="margin: 2%;">
+            <center>Skills Known</center>
+        </h3>
+        <!-- <div class="bar-container"
+            style="height: 50%;background-color: skyblue;margin-left: 25%;display: inline-block;width: 50%;padding: 10px;margin-bottom: 5%;">
+            <div class="ver-bar">
+                <p>HTML</p>
+                <div>90%</div>
+            </div>
+            <div class="ver-bar">
+                <p>CSS</p>
+                <div>85%</div>
+            </div>
+            <div class="ver-bar">
+                <P>JavaScript</P>
+                <div>80%</div>
+            </div>
+            <div class="ver-bar">
+                <p>React JS</p>
+                <div>80%</div>
+            </div>
+            <div class="ver-bar">
+                <p> Mongo &
+                    Express DB</p>
+                <div>80%</div>
+            </div>
+            <div class="ver-bar">
+                <p>Node JS</p>
+                <div>80%</div>
+            </div>
+            <div class="ver-bar">
+                <p>Magik</p>
+                <div>80%</div>
+            </div>
+        </div> -->
+        <table style="min-height: 30%;width: 80%;margin: 5%;margin-bottom: 1%;margin-top: 1%;">
+            <tr>
+                <td>HTML & CSS</td>
+                <td style="width: 60%;">
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" aria-label="HTMl" aria-valuenow="90"
+                            aria-valuemin="0" aria-valuemax="100" style="width: 90%;">90%</div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>Javascript</td>
+                <td>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" aria-label="HTMl" aria-valuenow="90"
+                            aria-valuemin="0" aria-valuemax="100" style="width: 80%;">80%</div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>Angular & Node JS</td>
+                <td>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" aria-label="HTMl" aria-valuenow="90"
+                            aria-valuemin="0" aria-valuemax="100" style="width: 75%;">75%</div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>Mongo & Express DB</td>
+                <td>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" aria-label="HTMl" aria-valuenow="90"
+                            aria-valuemin="0" aria-valuemax="100" style="width: 70%;">70%</div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>Magik</td>
+                <td>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" aria-label="HTMl" aria-valuenow="90"
+                            aria-valuemin="0" aria-valuemax="100" style="width: 90%;">90%</div>
+                    </div>
+                </td>
+            </tr>
+        </table>
+        <br><br>
+    </section>
+
+    <section class="exp" id="exp" style="background-color: pink;margin-top: 1%;">
+        <h1>
+            <center>Experience</center>
+        </h1>
+        <div class="tab" style="justify-content: center;align-items: center;text-align: center;">
+            <button class="tablinks" id="expid" onclick="openexp(event,'Experience')" > Experience </button>
+            <button class="tablinks" id="projid" onclick="openexp(event,'Project')" > Project </button>
+            <button class="tablinks" id="intid" onclick="openexp(event,'Internship')" > Internship </button>
+        </div>
+        <div id="Experience" class="tabcontent" style="display: block;">
+            <div class="exp-div" style="position: relative;height: auto">
+                <p class="exp-box">Experience</p>
+                <ul class="skill-ul">
+                    <li><i class="bi bi-emoji-sunglasses"></i> Worked as Junior Developer in Hexamap Solutions from 2019
+                        to Jan 2022 (2y
+                        8m)
+                    </li>
+                    <li><i class="bi bi-emoji-sunglasses"></i>Language : Magik </li>
+                    <li><i class="bi bi-emoji-sunglasses"></i>SW : Smallworld </li>
+                    <li><i class="bi bi-emoji-sunglasses"></i>Deployments Worked :3</li>
+                </ul>
+                <h2 class="exp-box">Projects Worked</h2>
+                <ul class="skill-ul">
+                    <li><b>TNB Upgrade Electric Project, Malaysia</b></li>
+                    <p><i class="bi bi-emoji-sunglasses"></i>This project is to upgrade Existing TNB service from SW
+                        4.1.2 to SW 5.2.8 for
+                        divisions
+                    </p>
+                    <ul>
+                        <li>Generation</li>
+                        <li>Distribution</li>
+                        <li>Transmission</li>
+                        <li>Corporate Service</li>
+                    </ul><br>
+                    
+                </ul>
+                <button class="exp-box" style="padding: 10px 10px;">
+                    <a href="images/Padmahasini AL - Experience Letter.pdf" target="_blank"
+                        style="cursor: pointer;text-decoration: none;font-size: 20px;color: white;
+                        width: auto;background-color:darkcyan ;margin-bottom: 10%;">Experience
+                        letter</a>
+                </button>
+            </div>
+        </div>
+        <div id="Project" class="tabcontent">
+            <div class="exp-div" style="position: relative;height: auto">
+                <div class="exp-box">Project</div>
+                <ul class="skill-ul">
+                    <li><i class="bi bi-star-fill"></i>SW : QGIS </li>
+                    <li><i class="bi bi-star-fill"></i>Satellite Image Used : Landsat-8</li>
+                    <li><i class="bi bi-star-fill"></i>Title : Electrical Conductivity of soil from Landsat8 satellite
+                        data for
+                        Vedaranyam
+                        region in Tamilnadu</li>
+
+                </ul>
+                <h2 class="exp-box">Project Outcomes</h2>
+                <ul class="skill-ul">
+                    <li><i class="bi bi-star-fill"></i>To increase productivity by growing suitable crops</li>
+                    <li><i class="bi bi-star-fill"></i>To check salinity of soil for every 15 days</li>
+                    <li><i class="bi bi-star-fill"></i>Useful to find drainage conditions and soil texture for large
+                        area</li>
+                    <li><i class="bi bi-star-fill"></i>Check the vegetation status of specific area</li>
+                </ul>
+                <button class="exp-box">
+                    <!-- style="display: inline-block;border-radius: 10%;background-color: darkblue;padding: 2% 2%;width: 50%;justify-items: center;justify-content: center;align-items: center;margin-left: 25%;"> -->
+                    <a href="images/ec-result.jpg" target="_blank"
+                        style="cursor: pointer;text-decoration: none;font-size: 20px;color: white;background-color:darkcyan ;">Project
+                        result</a>
+                </button>
+            </div>
+        </div>
+
+        <div id="Internship" class="tabcontent">
+            <div class="exp-div" style="position: relative;">
+                <div class="exp-box">Internship</div>
+                <ul class="skill-ul">
+                    <li><i class="bi bi-moon-fill"></i>Interned at M S Swaminathan Research Foundation in 2018 </li>
+                    <li><i class="bi bi-moon-fill"></i>Duration : 2months</li>
+                    <li> <i class="bi bi-moon-fill"></i>Object-oriented Feature Extraction using IKONOS in eCognition
+                        and Erdas
+                        Imagine
+                    </li>
+
+                </ul>
+
+                <h2 class="exp-box">Survey Camp</h2>
+                <ul class="skill-ul">
+                    <li><i class="bi bi-moon-fill"></i>Contour map for the clipped area of Valparai district using
+                        latitude and
+                        longitude
+                        collected with Total Station</li>
+                    <li><i class="bi bi-moon-fill"></i>Planimetric map for the clipped area of Valparai district using
+                        AUTOCAD</li>
+                </ul>
+                <button class="exp-box">
+                <!-- style="display: inline-block;border-radius: 10%;background-color: darkblue;padding: 2% 2%;width: 50%;justify-items: center;justify-content: center;align-items: center;margin-left: 25%;"> -->
+                    <a href="images/intern.jpg" target="_blank"
+                        style="cursor: pointer;text-decoration: none;font-size: 20px;color: white;background-color:darkcyan ;">Internship
+                        Result</a>
+                </button>
+            </div>
+        </div>
+    </section>
+    <section id="resp" name="resp" style="background-color: khaki;margin-top: -9%;">
+
+        <div style="width:90%;margin-top: 10%;margin-bottom: 0%;justify-content: center;">
+            <h1 style="justify-content: center;text-align: center;">Responsibilities</h1>
+            <table
+                style="font-size: 20px;height: 60vh;margin: 4%;background-color: palevioletred;color: black;justify-content: center;align-items: center;width: 100%;">
+                <tr style="height: 0%;color: green;background-color: greenyellow;">
+                    <td style="width: 10%;height:30%;margin: 0%;">
+                        <button type="button" class="btn btn-info"
+                            style="height: 40%;width:50%;font-size: 20px;">1</button>
+                    </td>
+                    <td>
+                        Volunteer of Youth Red Cross in Anna University
+                    </td>
+                </tr>
+                
+                <tr style="height: 10%;margin-top: 0%;color: orange;background-color: beige;">
+                    <td style="width: 10%;height:30%;"><button type="button" class="btn btn-info"
+                            style="height: 40%;width:50%;font-size: 20px;">2</button></td>
+                    <td>Organizer, Co-organizer and coordinator for many events in GeoHorizon
+                        (Symposium)
+                        and
+                        Kuruskshetra in year 2017-2018 in Anna University, Chennai</td>
+                </tr>
+                <tr style="height: 10%;color: blue;background-color: skyblue;">
+                    <td style="width: 10%;height:30%;">
+                        <button type="button" class="btn btn-info"
+                            style="height: 40%;width:50%;font-size: 20px;">3</button>
+                    </td>
+                    <td>
+                        Co-organiser of Thulir event’17, an event for school children in the LEO club of
+                        CEG
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div style="width: 100%;margin-bottom: 2%;">
+            <h1 style="justify-content: center;text-align: center;">Certifications</h1>
+            <div
+                style="background-color: lightgreen;width: 90%;margin-bottom: 2%;font-size: 20px;padding: 10px;margin-left: 3%;">
+                <ul style="list-style-type: none;">
+
+
+                    <li><i class="bi bi-check2-square" style="width: 200%;height:100%;color:white"></i>
+                        Won Mike Barnsley Memorial Awardee for best performance in Digital Image
+                        Processing – 2017-2018 in College of Engineering Guindy, Anna University </li>
+                    <br>
+                    <li><i class="bi bi-check2-square" style="width: 200%;height:50%;color:white"></i>
+                        Was awarded certificate for completing the online course “Advanced Image
+                        Analysis”
+                        conducted by IIRS – ISRO in the year 2018</li>
+                    <br>
+                    <li><i class="bi bi-check2-square" style="width: 200%;height:50%;color:white"></i>
+                        Certified in AUTOCAD drawing
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+        <div id="envelope" style="background-color: skyblue;margin: 0%;display: none;">
+            <h2 style="text-align: center;">Fill this form for further info!</h2>
+            <form method="post" target="_parent"
+                style="background-color:darkblue;border: 5px solid greenyellow;">
+                <table style="border: 5px solid greenyellow;">
+                    <tr style="height: 20%;">
+                        <div>
+                            <label for="fname" style="padding: 20px;">Name</label><br>
+                            <input type="text" style="border-bottom: 10%;width: 90%;padding: 10px;margin-left: 1%;" id="fname"
+                                placeholder="Type your name here" required>
+                            <!-- <br> -->
+                        </div>
+                        <div>
+                            <label for="cname" style="padding: 20px;">Company
+                                Name</label><br>
+                            <input type="text" style="width: 90%;padding: 10px;margin-left: 1%;" id="cname" placeholder="Type your Company Name"
+                                required>
+                        </div>
+                        <br>
+                        <div>
+                            <label for="phone" style="padding: 20px;">Phone</label><br>
+                            <input type="tel"  style="width: 90%;padding: 10px;margin-left: 1%;" id="phone" placeholder="Type your phone Number"
+                                required>
+                        </div>
+                        <br>
+                        <label for="comm" style="padding: 20px;">Comments</label><br>
+                        <textarea name="comm" id="comm" cols="30" rows="10" placeholder="Type your comments here"
+                            style="width: 90%;padding: 10px;margin-left: 1%;margin-bottom: 1%;"
+                            required></textarea>
+                        <br>
+                        <!-- <a href="mailto:padmalakshmanaswamy@gmail.com?subject=Email from padmaportfolio?body=hi" style="text-decoration: none;color: black;background-color: yellowgreen;margin-left: 40%;font-size: 24px;border: 2px solid white;">Send mail</a> -->
+
+                        <input type="button" name="submit" id="submit" onclick="sendmail();" value="Send Email"
+                            style="margin-left:40%;background-color:yellowgreen;width: auto;border: 2px solid white;margin-bottom: 3%;">
+
+                        <script>
+                            function sendmail() {
+                                var fname = document.getElementById("fname").value;
+                                var cname = document.getElementById("cname").value;
+                                var comm = document.getElementById("comm").value;
+                                var ph = document.getElementById("phone").value;
+                                if (fname == "" || cname == "" || comm == "" || phone == "") {
+                                    alert("Please fill all the details");
+                                }
+                                else {
+                                    var templateParams = {
+
+                                        from_name: fname,
+                                        to_name: 'padma',
+                                        message: comm,
+                                        phone: ph
+
+                                    };
+
+                                    emailjs.send('service_6rv285c', 'template_9bx1woq', templateParams)
+                                        .then(function (response) {
+                                            console.log('SUCCESS!', response.status, response.text);
+                                            alert("Form Submitted Successfully!");
+                                            return true;
+                                        }, function (error) {
+                                            console.log('FAILED...', error);
+                                        });
+                                }
+                                // var doc = "mailto:padmalakshmanaswamy@gmail.com?subject="
+                                //     + encodeURIComponent(subject)
+                                //     + "&body=" + encodeURIComponent(yourMessage);
+                                //     alert(doc);
+                            }
+                        </script>
+
+                    </tr>
+                </table>
+            </form>
+
+        </div>
+    </section>
+</body>
+
+</html>
